@@ -5,32 +5,48 @@
     <p>
       Add all your dogs here
     </p>
+        <section class="input">
+         <!-- TODO: Add dog name input field here -->
+        <InputField v-model="color" />
+      </section>
+
+      <section>
+       <!-- TODO: Add submit button here -->
+      </section>  
+
+      <section class="dogs">       
+        <ul>  <!-- TODO: Loop through listOfDogs array here -->
+          <li> 
+            <!-- TODO: Add dog container here -->
+          </li>
+        </ul>   
+      </section>
   </div>
 </template>
 
 <script>
+import InputField from './InputField.vue'
 export default {
   name: 'Layout',
+  components: {
+    InputField
+  },
   data() { 
     return {
-    name: '',
     color: '',
-    dogData: {},
-    listOfDogs: []
+    // You need to add additional variables here
   }
   },
   methods: {
-    submitDog() {
-      this.dogData = {
-        name: this.name,
-        color: this.color
-      }
-      //Add the dog into our dog array
-      this.listOfDogs.push(this.dogData);
+    submitDog() {    
+      /* 
+      TODO: 1. Create dog object with name and color attributes 
+      TODO: 2. Add the dog object into your dog array using push method
+      */
+ 
     },
-    removeDog(index) {      
-      //Remove selected dog from array
-     this.listOfDogs.splice(index, 1);
+    removeDog() {           
+     // TODO: Remove selected dog from dog array using splice method   
     }
   }
 }
