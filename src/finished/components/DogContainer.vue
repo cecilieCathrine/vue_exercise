@@ -24,7 +24,7 @@ export default {
 .box {
     border: 1px solid grey;
     padding: 2em;
-    margin-left: 1em;
     box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
 }
+
 </style>

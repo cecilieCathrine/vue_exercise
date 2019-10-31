@@ -1,6 +1,6 @@
 <template>
 <div class="actionButton">
-<button class="customButton" v-on:click="$emit('submit')">
+<button class="customButton" @click="$emit('submit')">
     <span v-if="dogName"> Add {{dogName}} </span>
     <span v-if="!dogName"> Add dog </span>
     </button>
@@ -28,7 +28,7 @@ export default {
 }
 
 .actionButton :hover {
-    background-color:lightskyblue;
+    background-color:lightblue;
     color: white; 
     cursor: pointer;
 }
