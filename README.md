@@ -14,11 +14,13 @@
 ```
 
 ### Task one (add input fields)
-A color <InputField /> component is already created for you, but the label text is missing. 
+You should do your work in the initial folder. Take a sneak peek in the finished folder if you 
+are stuck... Or better, read the documentation here https://vuejs.org/v2/guide/
 
+A InputField component is already created for you, but the label text is missing. 
 ```
-1. Add a label prop on the <InputField> component inside the Layout component. 
-Show the label in the InputField component. Label value should be 'Color'
+1. Pass a label prop from Layout component to the <InputField> component. Label value should be 'Color'. 
+   Show the label in the InputField component. 
 2. Add another InputField so that you have both a (dog)name and a color input field.
 ```
 
@@ -34,6 +36,8 @@ A  CustomButton component is already created, but it needs a few fixes before it
 
 Write something in the name input field and you should now (hopefully) see the dog name 
 appear on the button.
+Tips: If you use colon like :PropName, the contents of the attribute are evaluated as Javascript. 
+If you don't, it's a string.
 
 ```
 The last thing we need to do is to add a click event when user clicks the button
@@ -67,14 +71,16 @@ You now have list of dogs, but we need to list them out!
 ```
 NB: Vue require a :key property inside a v-for loop to be able to watch changes for each item 
 
+You should now see the added dogs on the screen. 
+
 ### Task four (Dog container)
 We want to display a proper dog container for each dog in the array. 
-(The Dog image is created in Dog.vue)
+(The Dog image is created for you in Dog.vue)
 
 ```
 1. Create a DogContainer component. Inside this component, import the Dog component and add it.
 2. The DogContainer should accept a dogData object prop. 
-3. The DogContainer should pass dogData.color to <Dog>. 
+3. The DogContainer should pass a color prop using dogData.color value <Dog>. 
    (The Dog component use the passed color property to fill the svg dog image.)
 4. The DogContainer should display the dog name below the <Dog>
 5. In Layout, import and add the DogContainer inside the <li></li> in the our v-for loop. 
