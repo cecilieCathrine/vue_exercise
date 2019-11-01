@@ -80,7 +80,7 @@ We want to display a proper dog container for each dog in the array.
 ```
 1. Create a DogContainer component. Inside this component, import the Dog component and add it.
 2. The DogContainer should accept a dogData object prop. 
-3. The DogContainer should pass a color prop using dogData.color value <Dog>. 
+3. The DogContainer should pass a color prop to <Dog> component, using dogData.color property. 
    (The Dog component use the passed color property to fill the svg dog image.)
 4. The DogContainer should display the dog name below the <Dog>
 5. In Layout, import and add the DogContainer inside the <li></li> in the our v-for loop. 
