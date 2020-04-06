@@ -1,6 +1,6 @@
 <template>
 <div class="inputField">
-<label :for="label" > <!-- TODO refer to label prop here --> </label>
+<label :for="label" > {{label}} </label>
 <input :id=label v-model="content" type="text" @input="handleInput" />
 </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   name: 'InputField',
   props: {
     value: String,
-    //TODO: Add label prop here
+    label: String
   },
    data () {
     return {

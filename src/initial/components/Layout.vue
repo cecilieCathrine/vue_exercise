@@ -1,13 +1,13 @@
 
 <template>
   <div class="dogApp">
-    <h1>Your amazing dogs</h1>
+    <h1>Dog application!!</h1>
     <p>
-      Add all your dogs here
+      Add all your dogs here. 
     </p>
         <section class="input">
          <!-- TODO: Add dog name input field here -->
-        <InputField v-model="color" />
+        <InputField v-model="color" label="Color" />
       </section>
 
       <section>
